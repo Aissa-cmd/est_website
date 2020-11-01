@@ -1,0 +1,120 @@
+<!-- the home page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/main.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <title>Home</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="navbar">
+    <div class="navbar__right">
+      <a href="">
+        <img class="navbar__right__logo" src="../static/images/logo.png" alt="logo">
+      </a>
+    </div>
+    <div class="navbar__left">
+      <a href="" class="navbar__left__option">Login</a>
+      <a href="" class="navbar__left__option">Register</a>
+    </div>
+  </div>
+  <!-- end navbar -->
+
+  <!-- underNavBar -->
+  <div class="header">
+    <div class="header__container">
+      <h1 class="header__title">EST-GI</h1>
+      <p class="header__para">
+        If your goal is to improve your programming skills,
+        then you are in the right place, share your thoughts
+        with the others, ask for explinations, answer others
+        questions, let's help each other. :)
+        <span class="header__slug">#keepCoding</span>
+      </p>
+    </div>
+  </div>
+  <!-- end underNavBar -->
+
+  <!-- content -->
+  <div class="content">
+    <h1 class="content__title">Our services</h1>
+    <div class="services">
+      <div class="service">
+        <div class="service__avatar">
+          <i style="color: green" class="fas fa-align-left"></i>
+        </div>
+        <div class="service__title">
+          Articals
+        </div>
+        <div class="service__body">
+          Improve your programming skills by read about diffrent technologies.
+        </div>
+      </div>
+      <div class="service">
+        <div class="service__avatar">
+          <i style="color: #3578e5" class="fab fa-telegram-plane"></i>
+        </div>
+        <div class="service__title">
+          Share your experience
+        </div>
+        <div class="service__body">
+          Share your thoughts, your point of view about a certain subject, your experiences, your projects, help the
+          others grow their skills and become better programmers.
+        </div>
+      </div>
+      <div class="service">
+        <div class="service__avatar">
+          <i style="color: gray" class="fas fa-download"></i>
+        </div>
+        <div class="service__title">
+          download
+        </div>
+        <div class="service__body">
+          Download cources and exercises and their correntions.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end content -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <img class="footer__top__img" src="http://www.esta.ac.ma/wp-content/uploads/2018/06/logo.jpg" alt="">
+
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom__para">
+        This site has been create by the students of EST Agadir GI to help each other to get better
+        programmers and adjuct to the new university envirement and grow their skills to get themselves
+        into the world of programming with complete confidence.
+      </div>
+      <div class="footer__bottom__form">
+        <h5>Send Feedback</h5>
+        <!-- this form is used if the user has any ideas that can improve the site of the user is facing any defecultied navigating through out the site -->
+        <form class="form" id="feedbackForm" action="" method="POST">
+          <label for="email">Email: </label>
+          <input type="email" placeholder="email" name="email" id="email" required>
+          <label for="email">Content: </label>
+          <textarea name="content" placeholder="feedback" id="content" cols="30" rows="10" required></textarea>
+          <input type="submit" value="send">
+        </form>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <script src="../static/js/app.js"></script>
+</body>
+
+</html>
