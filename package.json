@@ -1,0 +1,32 @@
+{
+  "name": "est-genie-informatique",
+  "version": "1.0.0",
+  "description": "Website for est school, genie informatique branch",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aissa-cmd/est_website.git"
+  },
+  "author": "Elhoube Brahim, Aissa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aissa-cmd/est_website/issues"
+  },
+  "homepage": "https://github.com/Aissa-cmd/est_website#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bootstrap": "^4.5.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jquery": "^3.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "pug": "^3.0.0",
+    "remixicon": "^2.5.0",
+    "validator": "^13.1.17"
+  }
+}
