@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "ACAA;;;;EAIE;AEJF;;;;EAIE;ACJF;;;;EAIE;ACJF;;;;EAIE;ACJF;;;;EAIE;ACJF;;;;EAIE;ACJF;;;;EAIE;ACJF;;;;EAIE;ACJF;;;;EAIE",
+    "sources": [
+        "style.scss",
+        "scss/helpers/_fonts.scss",
+        "scss/helpers/_variables.scss",
+        "scss/global/_main.scss",
+        "scss/global/_forms.scss",
+        "scss/layouts/_header1.scss",
+        "scss/layouts/_header2.scss",
+        "scss/layouts/_footer.scss",
+        "scss/pages/_home.scss",
+        "scss/pages/_lessons.scss",
+        "scss/pages/_notifications.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

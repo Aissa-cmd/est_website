@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @charset 'utf-8';
 
 // Import Helpers
@@ -17,24 +16,4 @@
 // Import Pages Styles
 @import 'scss/pages/home';
 @import 'scss/pages/lessons';
-=======
-@charset 'utf-8';
-
-// Import Helpers
-@import 'scss/helpers/fonts';
-@import 'scss/helpers/variables';
-
-// Import Global Styles
-@import 'scss/global/main';
-@import 'scss/global/forms';
-
-// Import Layouts Styles
-@import 'scss/layouts/header1';
-@import 'scss/layouts/header2';
-@import 'scss/layouts/footer';
-
-// Import Pages Styles
-@import 'scss/pages/home';
-@import 'scss/pages/lessons';
->>>>>>> 86d0ff7... main folder structure
 @import 'scss/pages/notifications';
