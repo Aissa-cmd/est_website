@@ -25,3 +25,31 @@ $('main.home section.testimonials .slick').slick({
   slidesToShow: 1,
   adaptiveHeight: true
 })
+
+/**
+ * Toggle Password Visibility
+ */
+function togglePassword(el, target) {
+  let icon = el.children[0]
+  let input = document.getElementById(target)
+
+  if (icon && input) {
+
+    switch (input.type) {
+      case 'password':
+        input.type = 'text'
+        icon.classList.add('ri-eye-off-line')
+        break;
+
+      case 'text':
+        input.type = 'password'
+        icon.classList.remove('ri-eye-off-line')
+        break;
+
+      default:
+        input.type = 'text'
+        icon.classList.add('ri-eye-off-line')
+        break;
+    }
+  }
+}

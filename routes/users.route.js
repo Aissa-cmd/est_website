@@ -11,10 +11,10 @@ userRouter.get('/login', controller.render_login)
 userRouter.get('/register', controller.render_register)
 
 // Reset Password Routes
-userRouter.get('/reset', controller.render_reset)
+userRouter.get('/reset-password', controller.render_reset)
 
 // Verify Account Routes
-userRouter.get('/verify', controller.render_verify)
+userRouter.get('/verify-account', controller.render_verify)
 
 // Export User Router
 module.exports = userRouter

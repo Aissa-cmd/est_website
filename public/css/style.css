@@ -5,7 +5,7 @@
 */
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Light.ttf");
 }
 
 /*!
@@ -9889,6 +9889,11 @@ img {
 == Forms
 ============
 */
+form.form .title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
 /* 
 ============
 == Header
@@ -10114,6 +10119,22 @@ main.home section.testimonials blockquote.testimonial cite {
   main.home section.info .box .content {
     text-align: start;
   }
+}
+
+/* 
+============
+== Login & Register Page
+============
+*/
+main.login,
+main.register,
+main.forgot-password,
+main.verify-account {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 20px;
 }
 
 /* 

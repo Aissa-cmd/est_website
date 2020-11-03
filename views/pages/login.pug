@@ -3,11 +3,31 @@ html(lang="en")
   head
     include ../partials/meta.pug
     include ../partials/stylesheets.pug
+    title Login
   body
     include ../layouts/header.pug
 
     main.login
-      | Welcome to the login page
+      .picture.col-md-6.d-none.d-md-block
+        img(src="/images/login.svg", alt=" ")
 
-    include ../layouts/footer.pug
+      form.form.col-md-6(action="/login", method="post", enctype="multipart/form-data")
+        .title Login
+        .form-group
+          label Email address
+          input.form-control.form-control-lg(type="email", name="email", placeholder="example@example.com")
+
+        .form-group
+          label Password
+          .input-group.input-group-lg
+            input#login-password(type="password", name="password", class="form-control", placeholder="********")
+            .input-group-append
+              button.btn.btn-outline-secondary.py-0(type="button", onclick="togglePassword(this, 'login-password')")
+                i.ri-eye-line
+          a.ml-2(href="/reset-password") Password forgotten ?
+          
+
+        button.btn.btn-primary.col-md-6.rounded-pill(type="submit") Login
+
+    //- include ../layouts/footer.pug
     include ../partials/scripts.pug
