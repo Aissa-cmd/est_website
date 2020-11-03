@@ -1,1 +1,78 @@
-p Home Page
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include ../partials/meta.pug
+    include ../partials/stylesheets.pug
+  body
+    include ../layouts/header.pug
+
+    main.home
+      section.intro.jumbotron.card.p-0.rounded-0.bg-dark.text-white
+          img.card-img(src='/images/desc-image.jpg' alt=' ')
+          .card-img-overlay.d-flex.flex-column.justify-content-center.align-items-center.rounded-0
+            h1.display-4.mb-4.text-center Genie Informatique
+            p.lead.mb-4.text-center
+              | Bienvenue to the genie informatique branch, we are here to help you finding yourself easily
+            .d-flex.justify-content-center.align-items-center(style='width: 100%;')
+              a.btn.btn-light.btn-lg.col-lg-2.mr-3(href='/login')
+                | Login
+              a.btn.btn-success.btn-lg.col-lg-2(href='/register')
+                | Register
+
+      section.info
+        .container-fluid
+          .box.col-md-7.d-flex.mb-4.shadow-sm
+            .picture.col-md-5
+              img(src="/images/sections/section-1.jpg", alt=" ")
+            .content.col-md-7
+              .title Title
+              p.paragraph 
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium culpa, similique reprehenderit quaerat consequuntur suscipit officia hic quidem atque itaque. Officiis, quasi iste laudantium et voluptate ipsam maiores sunt?
+
+          .box.col-md-7.d-flex.mb-4.shadow-sm
+            .picture.col-md-5
+              img(src="/images/sections/section-2.jpg", alt=" ")
+            .content.col-md-7
+              .title Title
+              p.paragraph 
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium culpa, similique reprehenderit quaerat consequuntur suscipit officia hic quidem atque itaque. Officiis, quasi iste laudantium et voluptate ipsam maiores sunt?
+
+          .box.col-md-7.d-flex.mb-4.shadow-sm
+            .picture.col-md-5
+              img(src="/images/sections/section-1.jpg", alt=" ")
+            .content.col-md-7
+              .title Title
+              p.paragraph 
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium culpa, similique reprehenderit quaerat consequuntur suscipit officia hic quidem atque itaque. Officiis, quasi iste laudantium et voluptate ipsam maiores sunt?
+
+          .box.col-md-7.d-flex.mb-4.shadow-sm
+            .picture.col-md-5
+              img(src="/images/sections/section-2.jpg", alt=" ")
+            .content.col-md-7
+              .title Title
+              p.paragraph 
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium culpa, similique reprehenderit quaerat consequuntur suscipit officia hic quidem atque itaque. Officiis, quasi iste laudantium et voluptate ipsam maiores sunt?
+
+      section.testimonials
+        h3.text-center.mb-5 Testimonials
+        .slick
+          blockquote.testimonial
+            p
+              | A blockquote element cannot be inside a paragraph, and since HTML4 actually needs to contain paragraphs. A blockquote element cannot be inside a paragraph, and since HTML4 actually needs to contain paragraphs.
+            cite
+              | Elhoube Brahim - Student
+
+          blockquote.testimonial
+            p
+              | A blockquote element cannot be inside a paragraph, and since HTML4 actually needs to contain paragraphs.
+            cite
+              | Elhoube Brahim - Student
+
+          blockquote.testimonial
+            p
+              | A blockquote element cannot be inside a paragraph, and since HTML4 actually needs to contain paragraphs.
+            cite
+              | Elhoube Brahim - Student
+
+    include ../layouts/footer.pug
+    include ../partials/scripts.pug

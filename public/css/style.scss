@@ -1,19 +1,21 @@
 @charset 'utf-8';
 
-// Import Helpers
+// Helpers
 @import 'scss/helpers/fonts';
 @import 'scss/helpers/variables';
 
-// Import Global Styles
+// Boottrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Global Styles
 @import 'scss/global/main';
 @import 'scss/global/forms';
 
-// Import Layouts Styles
-@import 'scss/layouts/header1';
-@import 'scss/layouts/header2';
+// Layouts
+@import 'scss/layouts/header';
 @import 'scss/layouts/footer';
 
-// Import Pages Styles
+// Pages
 @import 'scss/pages/home';
 @import 'scss/pages/lessons';
 @import 'scss/pages/notifications';

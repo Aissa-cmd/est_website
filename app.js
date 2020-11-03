@@ -13,11 +13,14 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 // Include Libraries From Node Modules
-app.use(
-  "/bootstrap",
-  express.static(__dirname + "/node_modules/bootstrap/dist")
-)
+app.use("/bootstrap", express.static(__dirname + "/node_modules/bootstrap/dist"))
+app.use("/remixicon", express.static(__dirname + "/node_modules/remixicon/fonts"))
+app.use("/aos", express.static(__dirname + "/node_modules/aos/dist"))
+app.use("/slick", express.static(__dirname + "/node_modules/slick-carousel/slick"))
 app.use("/jquery", express.static(__dirname + "/node_modules/jquery/dist"))
+
+// Set Static Folder
+app.use(express.static(__dirname + "/public"))
 
 // Include Routes
 app.use("/", routes)

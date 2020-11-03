@@ -1,5 +1,9 @@
-// Colors Variables
-$main: #F00;
+// Colors & Themes
+$main: #3498db;
+$theme-colors: ("main": $main);
 
-// Fonts Variables
-$main-font: 'Roboto';
+// Fonts
+$font-family-sans-serif: "Roboto";
+
+// Enable Shadows
+$enable-shadows: true;
