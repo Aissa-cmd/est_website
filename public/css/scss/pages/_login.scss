@@ -1,0 +1,16 @@
+/* 
+============
+== Login & Register Page
+============
+*/
+
+main.login,
+main.register,
+main.forgot-password,
+main.verify-account {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 20px;
+}

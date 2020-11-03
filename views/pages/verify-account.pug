@@ -1,1 +1,28 @@
-p Verify Account Page
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include ../partials/meta.pug
+    include ../partials/stylesheets.pug
+    title Verify account
+  body
+    include ../layouts/header.pug
+
+    main.verify-account
+      .picture.col-md-5.d-none.d-md-block
+        img(src="/images/verify.svg", alt=" ")
+
+      form.form.col-md-6(action="/verify-account", method="post", enctype="multipart/form-data")
+        .title Verify your email
+        .form-group
+          label Enter code
+          input.form-control.form-control-lg(type="text", name="text", placeholder="123456")
+          small.form-text.text-muted Please check your email inbox to get the sent code
+
+        .row
+          .col-md-6
+            button.btn.btn-outline-secondary.col-12.mb-2.rounded-pill Resend code
+          .col-md-6
+            button.btn.btn-primary.col-12.rounded-pill(type="submit") Verify my account
+
+    //- include ../layouts/footer.pug
+    include ../partials/scripts.pug

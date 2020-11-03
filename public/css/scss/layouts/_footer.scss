@@ -3,3 +3,73 @@
 == Footer
 ============
 */
+
+footer.footer {
+
+  .top-side {
+    background-color: #444;
+    padding: 20px 0;
+
+    .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a.brand {
+        display: block;
+      }
+
+      ul.socials {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: 0;
+
+        li.item {
+
+          &:not(:last-child) {
+            margin-inline-end: 10px;
+          }
+
+          a {
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: $transition-base;
+
+            &:hover {
+              background-color: #eee;
+            }
+
+            i {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-side {
+    padding: 10px 0;
+    background-color: #222;
+    color: #999;
+
+    .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -3,3 +3,112 @@
 == Home Page
 ============
 */
+
+main.home {
+
+  section.intro {
+    height: 600px;
+    overflow: hidden;
+
+    .card-img-overlay {
+      padding: 0 20px;
+      background-color: rgba($color: #000000, $alpha: .6);
+    }
+  }
+
+  section.info {
+
+    .container-fluid {
+      display: flex;
+      flex-direction: column;
+
+      .box {
+        flex-wrap: wrap;
+        border: 1px $gray-300 solid;
+        border-radius: 5px;
+        padding: 0;
+        overflow: hidden;
+
+        .picture {
+          padding: 0;
+        }
+
+        &:nth-child(2n) {
+          flex-direction: row-reverse;
+          text-align: end;
+          align-self: end;
+        }
+
+        .title {
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  section.testimonials {
+    background-color: $gray-200;
+    padding: 50px 15px;
+
+    .slick {
+      margin: 0 50px;
+    }
+
+    .slick-dots {
+      position: initial;
+    }
+
+    blockquote.testimonial {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 98% !important;
+      margin: 0 5px;
+
+      &::before {
+        content: "\201C";
+        position: absolute;
+        font-size: 80px;
+        padding: 10px;
+        line-height: 1;
+        color: $main;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      p {
+        padding-inline-start: 50px;
+        font-style: italic;
+        text-align: center;
+      }
+
+      cite {
+        font-size: 1em;
+        float: right;
+        font-style: normal;
+        color: $main;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  main.home {
+    section.info {
+
+      .box {
+
+        .picture {
+          height: 250px;
+        }
+
+        .content {
+          text-align: start;
+        }
+      }
+    }
+  }
+}

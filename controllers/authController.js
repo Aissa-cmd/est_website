@@ -1,3 +1,4 @@
+
 module.exports.render_lessons = (req, res) => {
   res.render('pages/lessons')
 }

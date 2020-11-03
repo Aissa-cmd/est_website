@@ -1,1 +1,14 @@
-p 404 Page
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include ../partials/meta.pug
+    include ../partials/stylesheets.pug
+    title Page not found
+  body
+    include ../layouts/header.pug
+
+    main.not-found
+      h1.text-center Ooops! We can't find what are you looking for
+
+    //- include ../layouts/footer.pug
+    include ../partials/scripts.pug

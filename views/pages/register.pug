@@ -1,1 +1,40 @@
-p Register Page
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include ../partials/meta.pug
+    include ../partials/stylesheets.pug
+    title Create account
+  body
+    include ../layouts/header.pug
+
+    main.register
+      .picture.col-md-6.d-none.d-md-block
+        img(src="/images/register.svg", alt=" ")
+
+      form.form.col-md-6(action="/create-account", method="post", enctype="multipart/form-data")
+        .title Create new account
+        .form-group.row
+          .col-md-6
+            label First Name
+            input.form-control.form-control-lg(type="text", name="fname", placeholder="Jhon")
+
+          .col-md-6
+            label Last Name
+            input.form-control.form-control-lg(type="text", name="lname", placeholder="Doe")
+        
+        .form-group
+          label Email address
+          input.form-control.form-control-lg(type="email", name="email", placeholder="example@example.com")
+
+        .form-group
+          label Password
+          .input-group.input-group-lg
+            input#register-password(type="password", name="password", class="form-control", placeholder="********")
+            .input-group-append
+              button.btn.btn-outline-secondary.py-0(type="button", onclick="togglePassword(this, 'register-password')")
+                i.ri-eye-line
+
+        button.btn.btn-primary.col-md-6.rounded-pill(type="submit") Create Account
+
+    //- include ../layouts/footer.pug
+    include ../partials/scripts.pug
