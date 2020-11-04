@@ -1,11 +1,14 @@
 // Init Body
-document.querySelector("body").onload = function () {
+document.querySelector("body").onload = () => {
   let header = document.querySelector('header.header.fixed-top')
   if (header) {
     let headerHeight = header.offsetHeight
     document.querySelector("body").style.marginTop = headerHeight + "px"
   }
 }
+
+// Init Bootstrap Tooltip
+$('[data-toggle="tooltip"]').tooltip()
 
 // Init AOS
 $('main.home section.info .box').attr('data-aos', 'flip-left')
@@ -26,15 +29,32 @@ $('main.home section.testimonials .slick').slick({
   adaptiveHeight: true
 })
 
+// Init Plyr
+new Plyr(document.querySelector('video#player'), {
+  tooltips: { controls: true },
+  invertTime: true,
+  captions: { active: true, update: true },
+  previewThumbnails: { enabled: false, src: '' }
+})
+
+// Fix Bootstrap's Dropdown Links Redirection
+$('.dropdown .dropdown-menu a.dropdown-item').on('click', function (e) {
+  e.preventDefault();
+  window.location.href = $(this).attr('href');
+})
+
 /**
  * Toggle Password Visibility
  */
 function togglePassword(el, target) {
+  // Get HTML Elements
   let icon = el.children[0]
   let input = document.getElementById(target)
 
+  // If Elemants Exists
   if (icon && input) {
 
+    // Check Input Type
     switch (input.type) {
       case 'password':
         input.type = 'text'

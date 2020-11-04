@@ -1,6 +1,8 @@
 // Colors & Themes
 $main: #3498db;
 $theme-colors: ("main": $main);
+$link-color: $main;
+$link-hover-color: darken($main, 10);
 
 // Fonts
 $font-family-sans-serif: "Roboto";

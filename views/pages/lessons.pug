@@ -7,8 +7,136 @@ html(lang="en")
   body
     include ../layouts/header.pug
 
-    main.lessons
-      h1.text-center Lessons
+    main.lessons-page.pt-5
+      .search.col-md-6.mx-auto.mb-5
+        i.ri-search-line
+        input.form-control.form-control-lg(type="search", placeholder="Search ...")
+
+      .filter.container-fluid.mb-5
+        .box.col-4
+          .content(title="Videos")
+            i.ri-live-line
+            span.d-none.d-sm-block Videos
+
+        .box.col-4
+          .content(title="Articles")
+            i.ri-article-line
+            span.d-none.d-sm-block Articles
+
+        .box.col-4
+          .content(title="Documents")
+            i.ri-file-text-line
+            span.d-none.d-sm-block Documents
+
+      .lessons.container-fluid
+        .col-md-4
+          .lesson
+            .picture
+              img(src="/images/videos/video-1604415229210-46.jpg", alt=" ")
+            .info
+              .title
+                a(href="/u/lessons/videos/lesson-slug") Algorithmique: Leçon 1
+              hr.my-2
+              .meta
+                .type Video
+                .date 24 min ago
+
+        .col-md-4
+          .lesson
+            .picture
+              img(src="/images/articles/article-1604415673641-45.jpg", alt=" ")
+            .info
+              .title
+                a(href="/u/lessons/articles/lesson-slug") Algorithmique: Leçon 1
+              hr.my-2
+              .meta
+                .type Article
+                .date 24 min ago
+
+        .col-md-4
+          .lesson
+            .picture
+              img(src="/images/documents/document-1604415229260-78.jpg", alt=" ")
+            .info
+              .title
+                a(href="/u/lessons/documents/lesson-slug") Algorithmique: Leçon 1
+              hr.my-2
+              .meta
+                .type Document
+                .date 24 min ago
+
+        .col-md-4
+          .lesson
+            .picture
+              img(src="/images/videos/video-1604415229210-46.jpg", alt=" ")
+            .info
+              .title
+                a(href="/u/lessons/videos/lesson-slug") Algorithmique: Leçon 1
+              hr.my-2
+              .meta
+                .type Video
+                .date 24 min ago
+
+        .col-md-4
+          .lesson
+            .picture
+              img(src="/images/articles/article-1604415673641-45.jpg", alt=" ")
+            .info
+              .title
+                a(href="/u/lessons/articles/lesson-slug") Algorithmique: Leçon 1
+              hr.my-2
+              .meta
+                .type Article
+                .date 24 min ago
+
+        .col-md-4
+          .lesson
+            .picture
+              img(src="/images/documents/document-1604415229260-78.jpg", alt=" ")
+            .info
+              .title
+                a(href="/u/lessons/documents/lesson-slug") Algorithmique: Leçon 1
+              hr.my-2
+              .meta
+                .type Document
+                .date 24 min ago
+
+
+        .col-md-4
+          .lesson
+            .picture
+              img(src="/images/videos/video-1604415229210-46.jpg", alt=" ")
+            .info
+              .title
+                a(href="/u/lessons/videos/lesson-slug") Algorithmique: Leçon 1
+              hr.my-2
+              .meta
+                .type Video
+                .date 24 min ago
+
+        .col-md-4
+          .lesson
+            .picture
+              img(src="/images/articles/article-1604415673641-45.jpg", alt=" ")
+            .info
+              .title
+                a(href="/u/lessons/articles/lesson-slug") Algorithmique: Leçon 1
+              hr.my-2
+              .meta
+                .type Article
+                .date 24 min ago
+
+        .col-md-4
+          .lesson
+            .picture
+              img(src="/images/documents/document-1604415229260-78.jpg", alt=" ")
+            .info
+              .title
+                a(href="/u/lessons/documents/lesson-slug") Algorithmique: Leçon 1
+              hr.my-2
+              .meta
+                .type Document
+                .date 24 min ago
 
     //- include ../layouts/footer.pug
     include ../partials/scripts.pug

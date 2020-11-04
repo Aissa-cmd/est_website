@@ -7,8 +7,31 @@ html(lang="en")
   body
     include ../layouts/header.pug
 
-    main.settings
-      h1.text-center Settings
+    main.settings.pt-5
+      h1.text-center.mb-5 Change credentials
+
+      form.form.col-md-6.mx-auto.mb-2(action="/login", method="post", enctype="multipart/form-data")
+        .form-group
+          label Email address
+          input.form-control.form-control-lg(type="email", name="email", placeholder="example@example.com" value="example@example.com")
+
+        .form-group
+          label Old password
+          .input-group.input-group-lg
+            input#old-password(type="password", name="oldPassword", class="form-control", placeholder="********")
+            .input-group-append
+              button.btn.btn-outline-secondary.py-0(type="button", onclick="togglePassword(this, 'old-password')")
+                i.ri-eye-line
+
+        .form-group
+          label New password
+          .input-group.input-group-lg
+            input#new-password(type="password", name="newPassword", class="form-control", placeholder="********")
+            .input-group-append
+              button.btn.btn-outline-secondary.py-0(type="button", onclick="togglePassword(this, 'new-password')")
+                i.ri-eye-line
+        
+        button.btn.btn-primary.col-md-12.rounded-pill.float-right(type="submit") Save changes
 
     //- include ../layouts/footer.pug
     include ../partials/scripts.pug

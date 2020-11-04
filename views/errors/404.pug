@@ -7,8 +7,13 @@ html(lang="en")
   body
     include ../layouts/header.pug
 
-    main.not-found
-      h1.text-center Ooops! We can't find what are you looking for
+    main.not-found.fluid-container.py-5
+      .picture.col-md-6
+        img(src="/images/404.svg", alt=" ")
+
+      .content.col-md-5.col-8.mx-auto.text-center
+        h2.mb-3 Ooops! We can not find what are you looking for
+        a(href="/").btn.btn-primary.rounded-pill.py-2.px-5 Go back home
 
     //- include ../layouts/footer.pug
     include ../partials/scripts.pug

@@ -1,0 +1,25 @@
+/* 
+============
+== Video Player Page
+============
+*/
+
+main.video-player {
+
+  video {
+    width: 100%;
+    max-height: 500px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .description {
+    padding: 20px;
+    border-top: 1px #ddd solid;
+  }
+}

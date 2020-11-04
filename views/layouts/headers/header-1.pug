@@ -3,9 +3,10 @@ header.header.fixed-top.shadow-sm.bg-white
 
     nav.navbar.navbar-light
 
-      a.navbar-brand(href='/') 
-        img(src="/images/logo.jpg", alt="EST GI", height="50")
+      a.navbar-brand.p-0(href='/') 
+        img(src="/images/logo.svg", alt="EST GI", height="50")
       
       .login-area
         a.login(href="/login") Login
         a.btn.btn-main(href="/register") Register
+        include ../dark-mode-switcher.pug

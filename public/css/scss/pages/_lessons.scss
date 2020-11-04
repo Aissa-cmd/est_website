@@ -3,3 +3,98 @@
 == Lessons Page
 ============
 */
+
+main.lessons-page {
+
+  .search {
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 12px;
+      left: 25px;
+    }
+
+    input {
+      padding-inline-start: 35px;
+    }
+  }
+
+  .filter {
+    display: flex;
+    align-items: center;
+
+    .box {
+
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px $gray-300 solid;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: $transition-base;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: #fafafa;
+          color: #222 !important;
+        }
+
+        i {
+          color: $main;
+          margin-inline-end: 10px;
+        }
+      }
+    }
+  }
+
+  .lessons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .lesson {
+      margin-bottom: 20px;
+      border: 1px #ddd solid;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 5px rgba($color: #000000, $alpha: .05);
+
+      .info {
+        padding: 10px 20px;
+
+        .title {
+          font-size: 1.2rem;
+        }
+
+        hr {
+          border-top: 1px solid #ddd;
+        }
+
+        .meta {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #bbb;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  main.lessons-page {
+    .filter .box .content {
+      padding: 0;
+
+      i {
+        margin: 0;
+        font-size: 2rem;
+      }
+    }
+  }
+}

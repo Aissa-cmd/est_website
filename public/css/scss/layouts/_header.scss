@@ -15,12 +15,9 @@ header.header {
     ul.nav {
 
       .nav-item {
+        margin: 5px 10px;
 
-        &:not(:last-child) {
-          margin-inline-end: 15px;
-        }
-
-        a {
+        >a {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -29,9 +26,22 @@ header.header {
           border-radius: 50%;
           color: #fff;
           text-decoration: none;
+          cursor: pointer;
 
           i {
             font-size: 1.2rem;
+          }
+        }
+
+        .dropdown-menu {
+          padding: 0;
+
+          .dropdown-item {
+            padding: 10px 15px;
+
+            &:not(:last-child) {
+              border-bottom: 1px #ddd solid;
+            }
           }
         }
       }
@@ -44,10 +54,7 @@ header.header {
 
       a {
         display: block;
-
-        &.login {
-          margin-inline-end: 15px;
-        }
+        margin-inline-end: 15px;
       }
     }
   }
@@ -67,6 +74,7 @@ header.header {
       }
 
       ul.nav {
+        justify-content: center;
         margin-top: 10px;
       }
 

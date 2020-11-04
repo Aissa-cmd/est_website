@@ -1,0 +1,12 @@
+01 => (Done) Design all website pages + dark mode
+02 => Create online mySql database
+03 => Create tables according to the app data
+04 => Add dummy data to the database
+05 => Build login and registration system
+06 => Enable user settings changing
+07 => Use node js mailer to send mails to the users -- mailtrap --
+08 => Protect authenticated routes
+09 => Serve app files -- videos & documents -- in the google drive
+10 => Enable Lessons Searching
+11 => Enable Notifications
+12 => Provide good user experience into studying mode

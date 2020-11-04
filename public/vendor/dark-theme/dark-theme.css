@@ -1,0 +1,25 @@
+[data-theme="dark"] {
+  background-color: #222 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #444 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #222 !important;
+}
+
+[data-theme="dark"] header.header {
+  background-color: #343a40 !important;
+}
+
+[data-theme="dark"] section.testimonials {
+  background-color: #343a40 !important;
+  color: #222;
+}
+
+[data-theme="dark"] section.testimonials h3 {
+  color: #eee;
+}
