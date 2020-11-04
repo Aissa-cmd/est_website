@@ -7,18 +7,31 @@ header.header.fixed-top.shadow-sm.bg-white
         img(src="/images/logo.svg", alt="EST GI", height="50")
       
       ul.nav
-        li.nav-item(title="Lessons")
-          a.bg-main(href="/u/lessons")
+        li.nav-item.dropdown.dropleft.show(data-toggle="dropdown", aria-haspopup="false")
+          a#dropdown-modules.bg-main
             i.ri-slideshow-2-line
-
-        li.nav-item(title="Notifications")
+          .dropdown-menu(aria-labelledby="dropdown-modules")
+            a.dropdown-item(href="/u/lessons/algorithmique") Algorithmique
+            a.dropdown-item(href="/u/lessons/language-c") Language C
+            a.dropdown-item(href="/u/lessons/analyse-1") Analyse 1
+            a.dropdown-item(href="/u/lessons/algebre-1") Algèbre 1
+            a.dropdown-item(href="/u/lessons/electronique-analogique-et-numerique") Electronique Analogique & Numérique
+            a.dropdown-item(href="/u/lessons/systemes-a-microprocesseurs") Systèmes à Microprocesseurs
+            a.dropdown-item(href="/u/lessons/francais") Français
+            a.dropdown-item(href="/u/lessons/anglais") Anglais
+            a.dropdown-item(href="/u/lessons/techniques-d-expression-et-de-Communication") Techniques d'Expression & de Communication
+          
+        li.nav-item(title="Notifications", data-toggle="tooltip")
           a.bg-main(href="/u/notifications")
             i.ri-notification-3-line
         
-        li.nav-item(title="Settings")
+        li.nav-item(title="Settings", data-toggle="tooltip")
           a.bg-main(href="/u/settings")
             i.ri-settings-5-line
 
-        li.nav-item(title="Logout")
+        li.nav-item(title="Logout", data-toggle="tooltip")
           a.bg-main(href="/u/logout")
             i.ri-logout-box-r-line
+
+        li.nav-item.d-flex.align-items-center
+          include ../dark-mode-switcher.pug

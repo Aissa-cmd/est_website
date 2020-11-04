@@ -17,6 +17,7 @@ app.use("/bootstrap", express.static(__dirname + "/node_modules/bootstrap/dist")
 app.use("/remixicon", express.static(__dirname + "/node_modules/remixicon/fonts"))
 app.use("/aos", express.static(__dirname + "/node_modules/aos/dist"))
 app.use("/slick", express.static(__dirname + "/node_modules/slick-carousel/slick"))
+app.use("/plyr", express.static(__dirname + "/node_modules/plyr/dist"))
 app.use("/jquery", express.static(__dirname + "/node_modules/jquery/dist"))
 
 // Set Static Folder

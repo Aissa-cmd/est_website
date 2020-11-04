@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include ../partials/meta.pug
+    include ../partials/stylesheets.pug
+    title Lesson slug
+  body
+    include ../layouts/header.pug
+
+    main.video-player
+      video#player(playsinline, controls, data-poster="/images/videos/video-1604415229210-46.jpg")
+        source(src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", type="video/mp4")
+
+      .actions
+        a.btn.btn-success(href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", target="_blank") Download Video
+
+      .description.col-md-8.mx-auto
+        h3 Description :
+        br
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quas ratione error necessitatibus nulla est, et repudiandae accusantium, velit fugit sapiente. Nihil maiores nemo, a nobis ipsum id fuga distinctio!
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae totam atque quo. Saepe dolorum, voluptatibus placeat amet ut aspernatur voluptatem consequuntur eaque voluptas, laudantium nisi molestiae, error similique hic maxime!
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quas ratione error necessitatibus nulla est, et repudiandae accusantium, velit fugit sapiente. Nihil maiores nemo, a nobis ipsum id fuga distinctio!
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae totam atque quo. Saepe dolorum, voluptatibus placeat amet ut aspernatur voluptatem consequuntur eaque voluptas, laudantium nisi molestiae, error similique hic maxime!
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quas ratione error necessitatibus nulla est, et repudiandae accusantium, velit fugit sapiente. Nihil maiores nemo, a nobis ipsum id fuga distinctio!
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae totam atque quo. Saepe dolorum, voluptatibus placeat amet ut aspernatur voluptatem consequuntur eaque voluptas, laudantium nisi molestiae, error similique hic maxime!
+
+    //- include ../layouts/footer.pug
+    include ../partials/scripts.pug

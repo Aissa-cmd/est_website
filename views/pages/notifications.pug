@@ -7,8 +7,30 @@ html(lang="en")
   body
     include ../layouts/header.pug
 
-    main.notifications
-      h1.text-center Notifications
+    main.notifications-page.pt-5
+      h1.text-center Notifications Page
+
+      .notifications.container-fluid.mt-5.col-md-8.mx-auto
+        a(href="/").notification.unread
+          .icon.bg-danger
+            i.ri-notification-3-line
+          .content
+            .title New video has been uploaded *_*
+            .date 28 min ago
+
+        a(href="/").notification
+          .icon.bg-success
+            i.ri-notification-3-line
+          .content
+            .title New video has been uploaded *_*
+            .date 28 min ago
+
+        a(href="/").notification
+          .icon.bg-info
+            i.ri-notification-3-line
+          .content
+            .title New video has been uploaded *_*
+            .date 28 min ago
 
     //- include ../layouts/footer.pug
     include ../partials/scripts.pug

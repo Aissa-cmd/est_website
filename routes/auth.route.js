@@ -1,4 +1,3 @@
-
 // Require Express Router
 const authRouter = require('express').Router()
 
@@ -6,7 +5,9 @@ const authRouter = require('express').Router()
 const controller = require('../controllers/authController')
 
 // Lessons Routes
-authRouter.get('/lessons', controller.render_lessons)
+authRouter.get('/lessons/:module', controller.render_lessons)
+authRouter.get('/lessons/videos/:course-slug', controller.render_video_player)
+authRouter.get('/lessons/articles/:course-slug', controller.render_article)
 
 // Notifications Routes
 authRouter.get('/notifications', controller.render_notifications)
